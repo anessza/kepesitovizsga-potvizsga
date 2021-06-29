@@ -6,12 +6,7 @@ public class Lumberjack {
     }
 
     boolean canCut(Tree tree){
-        if (tree.getHeight() >= 4) {
-            return true;
-        }
-        return true;
+        return (tree.getHeight() > 4);
     }
-
-
 
 }

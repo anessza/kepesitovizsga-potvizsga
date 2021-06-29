@@ -2,7 +2,6 @@ package hu.nive.ujratervezes.forest;
 
 public class FoxtailPine extends Tree {
     private String type;
-    private int height;
 
     public FoxtailPine(int height) {
         super(height);
@@ -10,14 +9,18 @@ public class FoxtailPine extends Tree {
     }
 
     public FoxtailPine() {
-        super(height);
+        super();
         this.type = "FoxtailPine";
+    }
+
+    public String getType() {
+        return type;
     }
 
 
     @Override
     public void irrigate() {
-        int height = this.getHeight() + 2;
+        this.height = this.getHeight() + 1;
     }
 
 }

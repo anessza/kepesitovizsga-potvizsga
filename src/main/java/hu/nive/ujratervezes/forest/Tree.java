@@ -27,5 +27,5 @@ public abstract class Tree {
     }
 
 
-    abstract void irrigate();
+    public abstract void irrigate();
 }

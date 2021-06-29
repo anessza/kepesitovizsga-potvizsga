@@ -9,12 +9,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ForestTest {
 
-//    @Test
-//    void test_create() {
-//        Forest forest = forestWithFiveTrees();
-//        assertEquals(5, forest.getTrees().size());
-//        assertEquals(4, forest.getTrees().get(2).getHeight());
-//    }
+    @Test
+    void test_create() {
+        Forest forest = forestWithFiveTrees();
+        assertEquals(5, forest.getTrees().size());
+        assertEquals(4, forest.getTrees().get(2).getHeight());
+    }
 
     @Test
     void test_rain() {
@@ -30,6 +30,7 @@ class ForestTest {
         forest.cutTrees(new Lumberjack());
         assertEquals(3, forest.getTrees().size());
         assertEquals(3, forest.getTrees().get(1).getHeight());
+
     }
 
     @Test

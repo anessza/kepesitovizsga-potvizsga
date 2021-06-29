@@ -2,7 +2,6 @@ package hu.nive.ujratervezes.forest;
 
 public class WhitebarkPine extends Tree {
     private String type;
-    private int height;
 
     public WhitebarkPine(int height) {
         super(height);
@@ -10,7 +9,7 @@ public class WhitebarkPine extends Tree {
     }
 
     public WhitebarkPine() {
-        super(height);
+        super();
         this.type = "WhitebarkPine";
     }
 
@@ -20,7 +19,7 @@ public class WhitebarkPine extends Tree {
 
     @Override
     public void irrigate() {
-        int height = this.getHeight() + 2;
+      this.height = this.getHeight() + 2;
     }
 
 }
