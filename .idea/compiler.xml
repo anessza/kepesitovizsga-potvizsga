@@ -13,4 +13,9 @@
       <module name="kepesitovizsga-potvizsga" target="15" />
     </bytecodeTargetLevel>
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="kepesitovizsga-potvizsga" options="--add-exports java.base/jdk.internal.org.objectweb.asm.tree=ALL-UNNAMED" />
+    </option>
+  </component>
 </project>
